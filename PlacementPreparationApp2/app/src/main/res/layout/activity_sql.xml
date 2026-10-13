@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F5F5"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/sql_preparation_title"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:textColor="#222222"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/sql_desc"
+            android:textSize="16sp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="20dp"/>
+
+        <Button
+            android:id="@+id/sqlBasicsButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/sql_basics"
+            android:textSize="18sp"/>
+
+        <Button
+            android:id="@+id/selectButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/select_queries"
+            android:textSize="18sp"
+            android:layout_marginTop="10dp"/>
+
+        <Button
+            android:id="@+id/whereButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/where_conditions"
+            android:textSize="18sp"
+            android:layout_marginTop="10dp"/>
+
+        <Button
+            android:id="@+id/aggregateButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/aggregate_functions"
+            android:textSize="18sp"
+            android:layout_marginTop="10dp"/>
+
+        <Button
+            android:id="@+id/groupByButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/group_by_having"
+            android:textSize="18sp"
+            android:layout_marginTop="10dp"/>
+
+        <Button
+            android:id="@+id/orderByButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/order_by"
+            android:textSize="18sp"
+            android:layout_marginTop="10dp"/>
+
+        <Button
+            android:id="@+id/joinsSqlButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/sql_joins"
+            android:textSize="18sp"
+            android:layout_marginTop="10dp"/>
+
+        <Button
+            android:id="@+id/subqueryButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/subqueries"
+            android:textSize="18sp"
+            android:layout_marginTop="10dp"/>
+
+        <Button
+            android:id="@+id/sqlInterviewButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/sql_interview_questions"
+            android:textSize="18sp"
+            android:layout_marginTop="10dp"/>
+
+    </LinearLayout>
+
+</ScrollView>

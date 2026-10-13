@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F5F5"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/dbms_study_notes_title"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:textColor="#222222"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/dbms_notes_desc"
+            android:textSize="16sp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="20dp"/>
+
+
+        <Button
+            android:id="@+id/dbmsBasicsNotesButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/dbms_basics"
+            android:textSize="18sp"/>
+
+
+        <Button
+            android:id="@+id/erModelNotesButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/er_model"
+            android:textSize="18sp"
+            android:layout_marginTop="10dp"/>
+
+
+        <Button
+            android:id="@+id/normalizationNotesButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/normalization"
+            android:textSize="18sp"
+            android:layout_marginTop="10dp"/>
+
+
+        <Button
+            android:id="@+id/keysNotesButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/keys"
+            android:textSize="18sp"
+            android:layout_marginTop="10dp"/>
+
+
+        <Button
+            android:id="@+id/transactionsNotesButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/transactions"
+            android:textSize="18sp"
+            android:layout_marginTop="10dp"/>
+
+
+        <Button
+            android:id="@+id/acidNotesButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/acid_properties"
+            android:textSize="18sp"
+            android:layout_marginTop="10dp"/>
+
+
+        <Button
+            android:id="@+id/indexingNotesButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/indexing"
+            android:textSize="18sp"
+            android:layout_marginTop="10dp"/>
+
+
+        <Button
+            android:id="@+id/sqlNotesButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/sql"
+            android:textSize="18sp"
+            android:layout_marginTop="10dp"/>
+
+
+        <Button
+            android:id="@+id/joinsNotesButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/sql_joins"
+            android:textSize="18sp"
+            android:layout_marginTop="10dp"/>
+
+    </LinearLayout>
+
+</ScrollView>

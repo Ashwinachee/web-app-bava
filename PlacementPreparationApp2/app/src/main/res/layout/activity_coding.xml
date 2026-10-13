@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F5F5"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/coding_practice_title"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:textColor="#222222"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/coding_desc"
+            android:textSize="16sp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="25dp"/>
+
+        <Button
+            android:id="@+id/leetcodeButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/leetcode"
+            android:textSize="18sp"/>
+
+        <Button
+            android:id="@+id/hackerrankButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/hackerrank"
+            android:textSize="18sp"
+            android:layout_marginTop="12dp"/>
+
+        <Button
+            android:id="@+id/codechefButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/codechef"
+            android:textSize="18sp"
+            android:layout_marginTop="12dp"/>
+
+        <Button
+            android:id="@+id/codeforcesButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/codeforces"
+            android:textSize="18sp"
+            android:layout_marginTop="12dp"/>
+
+        <Button
+            android:id="@+id/gfgButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/geeksforgeeks"
+            android:textSize="18sp"
+            android:layout_marginTop="12dp"/>
+
+    </LinearLayout>
+
+</ScrollView>

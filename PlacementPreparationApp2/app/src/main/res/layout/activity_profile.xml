@@ -1,0 +1,355 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0F1117"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <!-- Header -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="👤  My Profile"
+            android:textSize="26sp"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="4dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Your personal placement profile"
+            android:textSize="14sp"
+            android:textColor="#9E9E9E"
+            android:layout_marginBottom="24dp" />
+
+        <!-- Profile Photo Card -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="16dp"
+            app:cardBackgroundColor="#1A1D2E"
+            app:cardElevation="6dp"
+            android:layout_marginBottom="16dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:padding="24dp">
+
+                <ImageView
+                    android:id="@+id/profileImageView"
+                    android:layout_width="110dp"
+                    android:layout_height="110dp"
+                    android:src="@android:drawable/ic_menu_camera"
+                    android:background="@drawable/circle_avatar_bg"
+                    android:scaleType="centerCrop"
+                    android:padding="4dp"
+                    android:layout_marginBottom="12dp" />
+
+                <Button
+                    android:id="@+id/changePhotoButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="📷  Change Photo"
+                    android:backgroundTint="#6C63FF"
+                    android:textColor="#FFFFFF"
+                    android:paddingStart="20dp"
+                    android:paddingEnd="20dp"
+                    android:visibility="gone" />
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- Personal Info Card -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="16dp"
+            app:cardBackgroundColor="#1A1D2E"
+            app:cardElevation="6dp"
+            android:layout_marginBottom="16dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="20dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="👨‍🎓  Personal Information"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:textColor="#6C63FF"
+                    android:layout_marginBottom="16dp" />
+
+                <!-- Full Name -->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Full Name"
+                    android:textColor="#9E9E9E"
+                    android:textSize="12sp"
+                    android:layout_marginBottom="4dp" />
+
+                <EditText
+                    android:id="@+id/profileNameEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Enter your full name"
+                    android:textColor="#FFFFFF"
+                    android:textColorHint="#555555"
+                    android:backgroundTint="#333652"
+                    android:padding="12dp"
+                    android:textSize="15sp"
+                    android:enabled="false"
+                    android:inputType="textPersonName"
+                    android:layout_marginBottom="14dp" />
+
+                <!-- Email -->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Email Address"
+                    android:textColor="#9E9E9E"
+                    android:textSize="12sp"
+                    android:layout_marginBottom="4dp" />
+
+                <EditText
+                    android:id="@+id/profileEmailEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Enter your email"
+                    android:textColor="#FFFFFF"
+                    android:textColorHint="#555555"
+                    android:backgroundTint="#333652"
+                    android:padding="12dp"
+                    android:textSize="15sp"
+                    android:enabled="false"
+                    android:inputType="textEmailAddress"
+                    android:layout_marginBottom="14dp" />
+
+                <!-- Phone -->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Phone Number"
+                    android:textColor="#9E9E9E"
+                    android:textSize="12sp"
+                    android:layout_marginBottom="4dp" />
+
+                <EditText
+                    android:id="@+id/profilePhoneEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Enter your phone number"
+                    android:textColor="#FFFFFF"
+                    android:textColorHint="#555555"
+                    android:backgroundTint="#333652"
+                    android:padding="12dp"
+                    android:textSize="15sp"
+                    android:enabled="false"
+                    android:inputType="phone"
+                    android:layout_marginBottom="4dp" />
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- Academic Info Card -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="16dp"
+            app:cardBackgroundColor="#1A1D2E"
+            app:cardElevation="6dp"
+            android:layout_marginBottom="16dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="20dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="🏫  Academic Details"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:textColor="#00C9A7"
+                    android:layout_marginBottom="16dp" />
+
+                <!-- College -->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="College / University"
+                    android:textColor="#9E9E9E"
+                    android:textSize="12sp"
+                    android:layout_marginBottom="4dp" />
+
+                <EditText
+                    android:id="@+id/profileCollegeEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Enter your college name"
+                    android:textColor="#FFFFFF"
+                    android:textColorHint="#555555"
+                    android:backgroundTint="#333652"
+                    android:padding="12dp"
+                    android:textSize="15sp"
+                    android:enabled="false"
+                    android:inputType="textCapWords"
+                    android:layout_marginBottom="14dp" />
+
+                <!-- Branch -->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Branch / Department"
+                    android:textColor="#9E9E9E"
+                    android:textSize="12sp"
+                    android:layout_marginBottom="4dp" />
+
+                <EditText
+                    android:id="@+id/profileBranchEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="e.g. Computer Science and Engineering"
+                    android:textColor="#FFFFFF"
+                    android:textColorHint="#555555"
+                    android:backgroundTint="#333652"
+                    android:padding="12dp"
+                    android:textSize="15sp"
+                    android:enabled="false"
+                    android:inputType="textCapWords"
+                    android:layout_marginBottom="14dp" />
+
+                <!-- Graduation Year -->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Year of Graduation"
+                    android:textColor="#9E9E9E"
+                    android:textSize="12sp"
+                    android:layout_marginBottom="4dp" />
+
+                <EditText
+                    android:id="@+id/profileGradYearEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="e.g. 2026"
+                    android:textColor="#FFFFFF"
+                    android:textColorHint="#555555"
+                    android:backgroundTint="#333652"
+                    android:padding="12dp"
+                    android:textSize="15sp"
+                    android:enabled="false"
+                    android:inputType="number"
+                    android:layout_marginBottom="4dp" />
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- Social Links Card -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="16dp"
+            app:cardBackgroundColor="#1A1D2E"
+            app:cardElevation="6dp"
+            android:layout_marginBottom="24dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="20dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="🔗  Social &amp; Professional Links"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:textColor="#FF6B6B"
+                    android:layout_marginBottom="16dp" />
+
+                <!-- LinkedIn -->
+                <TextView
+                    android:id="@+id/linkedinLabel"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="💼  LinkedIn Profile"
+                    android:textColor="#0A66C2"
+                    android:textSize="12sp"
+                    android:layout_marginBottom="4dp" />
+
+                <EditText
+                    android:id="@+id/profileLinkedinEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="linkedin.com/in/yourprofile"
+                    android:textColor="#FFFFFF"
+                    android:textColorHint="#555555"
+                    android:backgroundTint="#333652"
+                    android:padding="12dp"
+                    android:textSize="15sp"
+                    android:enabled="false"
+                    android:inputType="textUri"
+                    android:layout_marginBottom="14dp" />
+
+                <!-- GitHub -->
+                <TextView
+                    android:id="@+id/githubLabel"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="🐙  GitHub Profile"
+                    android:textColor="#C9D1D9"
+                    android:textSize="12sp"
+                    android:layout_marginBottom="4dp" />
+
+                <EditText
+                    android:id="@+id/profileGithubEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="github.com/yourusername"
+                    android:textColor="#FFFFFF"
+                    android:textColorHint="#555555"
+                    android:backgroundTint="#333652"
+                    android:padding="12dp"
+                    android:textSize="15sp"
+                    android:enabled="false"
+                    android:inputType="textUri"
+                    android:layout_marginBottom="4dp" />
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- Edit / Save Button -->
+        <Button
+            android:id="@+id/editSaveButton"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:text="Edit Profile"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:backgroundTint="#6C63FF"
+            android:layout_marginBottom="32dp" />
+
+    </LinearLayout>
+</ScrollView>

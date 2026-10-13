@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F5F5"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <!-- Title -->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/dsa_preparation_title"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:textColor="#222222"/>
+
+
+        <!-- Description -->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/dsa_desc"
+            android:textSize="16sp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="15dp"/>
+
+
+        <!-- DSA Progress -->
+
+        <TextView
+            android:id="@+id/dsaProgressText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="DSA Progress: 0%"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#222222"
+            android:layout_marginBottom="20dp"/>
+
+
+        <!-- Arrays -->
+
+        <Button
+            android:id="@+id/arraysButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/arrays_topic"
+            android:textSize="18sp"/>
+
+        <CheckBox
+            android:id="@+id/arraysCheckBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mark Arrays as Completed"
+            android:textSize="16sp"/>
+
+
+        <!-- Strings -->
+
+        <Button
+            android:id="@+id/stringsButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/strings_topic"
+            android:textSize="18sp"
+            android:layout_marginTop="10dp"/>
+
+        <CheckBox
+            android:id="@+id/stringsCheckBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mark Strings as Completed"
+            android:textSize="16sp"/>
+
+
+        <!-- Linked List -->
+
+        <Button
+            android:id="@+id/linkedListButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/linked_list"
+            android:textSize="18sp"
+            android:layout_marginTop="10dp"/>
+
+        <CheckBox
+            android:id="@+id/linkedListCheckBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mark Linked List as Completed"
+            android:textSize="16sp"/>
+
+
+        <!-- Stack -->
+
+        <Button
+            android:id="@+id/stackButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/stack"
+            android:textSize="18sp"
+            android:layout_marginTop="10dp"/>
+
+        <CheckBox
+            android:id="@+id/stackCheckBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mark Stack as Completed"
+            android:textSize="16sp"/>
+
+
+        <!-- Queue -->
+
+        <Button
+            android:id="@+id/queueButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/queue"
+            android:textSize="18sp"
+            android:layout_marginTop="10dp"/>
+
+        <CheckBox
+            android:id="@+id/queueCheckBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mark Queue as Completed"
+            android:textSize="16sp"/>
+
+
+        <!-- Hashing -->
+
+        <Button
+            android:id="@+id/hashingButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/hashing"
+            android:textSize="18sp"
+            android:layout_marginTop="10dp"/>
+
+        <CheckBox
+            android:id="@+id/hashingCheckBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mark Hashing as Completed"
+            android:textSize="16sp"/>
+
+
+        <!-- Recursion -->
+
+        <Button
+            android:id="@+id/recursionButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/recursion"
+            android:textSize="18sp"
+            android:layout_marginTop="10dp"/>
+
+        <CheckBox
+            android:id="@+id/recursionCheckBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mark Recursion as Completed"
+            android:textSize="16sp"/>
+
+
+        <!-- Binary Search -->
+
+        <Button
+            android:id="@+id/binarySearchButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/binary_search"
+            android:textSize="18sp"
+            android:layout_marginTop="10dp"/>
+
+        <CheckBox
+            android:id="@+id/binarySearchCheckBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mark Binary Search as Completed"
+            android:textSize="16sp"/>
+
+
+        <!-- Trees -->
+
+        <Button
+            android:id="@+id/treesButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/trees"
+            android:textSize="18sp"
+            android:layout_marginTop="10dp"/>
+
+        <CheckBox
+            android:id="@+id/treesCheckBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mark Trees as Completed"
+            android:textSize="16sp"/>
+
+
+        <!-- Graphs -->
+
+        <Button
+            android:id="@+id/graphsButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/graphs"
+            android:textSize="18sp"
+            android:layout_marginTop="10dp"/>
+
+        <CheckBox
+            android:id="@+id/graphsCheckBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mark Graphs as Completed"
+            android:textSize="16sp"/>
+
+
+        <!-- Dynamic Programming -->
+
+        <Button
+            android:id="@+id/dpButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/dynamic_programming"
+            android:textSize="18sp"
+            android:layout_marginTop="10dp"/>
+
+        <CheckBox
+            android:id="@+id/dpCheckBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mark Dynamic Programming as Completed"
+            android:textSize="16sp"/>
+
+    </LinearLayout>
+
+</ScrollView>

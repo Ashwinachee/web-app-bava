@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F5F5"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/resume_builder_title"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:textColor="#222222"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/resume_desc"
+            android:textSize="16sp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="20dp"/>
+
+
+        <EditText
+            android:id="@+id/nameEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/full_name_hint"
+            android:inputType="textPersonName"/>
+
+
+        <EditText
+            android:id="@+id/emailEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/email_hint"
+            android:inputType="textEmailAddress"/>
+
+
+        <EditText
+            android:id="@+id/phoneEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/phone_hint"
+            android:inputType="phone"/>
+
+
+        <EditText
+            android:id="@+id/educationEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/education_hint"
+            android:inputType="textMultiLine"
+            android:minLines="2"/>
+
+
+        <EditText
+            android:id="@+id/skillsEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/skills_hint"
+            android:inputType="textMultiLine"
+            android:minLines="2"/>
+
+
+        <EditText
+            android:id="@+id/projectsEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/projects_hint"
+            android:inputType="textMultiLine"
+            android:minLines="3"/>
+
+
+        <EditText
+            android:id="@+id/certificationsEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/certifications_hint"
+            android:inputType="textMultiLine"
+            android:minLines="2"/>
+
+
+        <Button
+            android:id="@+id/generateResumeButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/generate_resume"
+            android:textSize="18sp"
+            android:layout_marginTop="20dp"/>
+
+        <Button
+            android:id="@+id/atsDirectButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="🤖  ATS Resume Score Checker"
+            android:textSize="18sp"
+            android:layout_marginTop="12dp"/>
+
+    </LinearLayout>
+
+</ScrollView>

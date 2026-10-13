@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F5F5"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/aptitude_study_notes_title"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:textColor="#222222"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/aptitude_notes_desc"
+            android:textSize="16sp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="20dp"/>
+
+
+        <Button
+            android:id="@+id/numberSystemNotesButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/number_system"
+            android:textSize="18sp"/>
+
+
+        <Button
+            android:id="@+id/percentageNotesButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/percentages"
+            android:textSize="18sp"
+            android:layout_marginTop="10dp"/>
+
+
+        <Button
+            android:id="@+id/profitLossNotesButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/profit_loss"
+            android:textSize="18sp"
+            android:layout_marginTop="10dp"/>
+
+
+        <Button
+            android:id="@+id/timeWorkNotesButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/time_work"
+            android:textSize="18sp"
+            android:layout_marginTop="10dp"/>
+
+
+        <Button
+            android:id="@+id/timeSpeedNotesButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/time_speed_distance"
+            android:textSize="18sp"
+            android:layout_marginTop="10dp"/>
+
+
+        <Button
+            android:id="@+id/ratioNotesButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/ratio_proportion"
+            android:textSize="18sp"
+            android:layout_marginTop="10dp"/>
+
+
+        <Button
+            android:id="@+id/probabilityNotesButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/probability"
+            android:textSize="18sp"
+            android:layout_marginTop="10dp"/>
+
+
+        <Button
+            android:id="@+id/permutationNotesButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/permutation_combination"
+            android:textSize="18sp"
+            android:layout_marginTop="10dp"/>
+
+    </LinearLayout>
+
+</ScrollView>
